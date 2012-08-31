@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test Custom checkbox</title>
+	
+	<link href="css/index.css" type="text/css" rel="stylesheet" />
+	
+	<script type="text/javascript" src="js/shCore.js"></script>
+	<script type="text/javascript" src="js/shBrushJScript.js"></script>
+    <script type="text/javascript" src="js/shBrushCss.js"></script>
+	
+	<link href="css/shCore.css" rel="stylesheet" type="text/css" />
+	<link href="css/shCoreDefault.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="js/prototype.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <!-- Custom Checkbox Styles -->
+    <link href="custom-checkbox/default.css" type="text/css" rel="stylesheet" />
+    <link href="custom-checkbox/green.css" type="text/css" rel="stylesheet" />
+
+</head>
+
+<body>
+<div class="wrapper">
+
+	<h1>Custom Checkbox</h1>
+	<!--<div class="author">by Artem Deykun <br />artem@deykun.com</div>-->
+	<p>
+		Hello, people. I produce you my script of creating custom styled checkboxes. 
+		2012 year overboard, so realization on CSS3 is a good solution. Those people who use old browsers will not appreciate your efforts, I'm shure.<br />
+		The main goal is to style the way in which the old browsers will show they default elements in right way without deffects. 
+	</p>
+
+	<h2>Style checkbox in form with CSS3</h2>
+
+	<p>CSS stylesheet presented in this article is intended for layout like this:</p>
+
+	<pre class="brush: js; gutter: false; toolbar:false">
+		<input id="check1" type="checkbox"><label for="check1">Checkbox 1</label>
+	</pre>
+
+    <p>You can implement custom design to all checkboxes on the page using this CSS stylesheet.</p>
+
+    <pre class="brush: css; gutter: true; toolbar:false">
+        input[type="checkbox"] + label:before {
+            vertical-align: middle;
+        }
+        input[type="checkbox"] {
+            opacity: 0;
+            position:absolute;
+        }
+
+        label input[type="checkbox"] {
+            opacity:1;
+            position: relative;
+        }
+
+
+        input[type="checkbox"] + label {
+            text-indent:-2px;
+            padding-left:20px;
+        }
+
+        input[type="checkbox"] + label::before {
+            display: inline-block;
+            width: 16px;
+            height: 15px;
+
+            margin: 0 8px 4px 0;
+
+            line-height: 19px;
+            content: "";
+            vertical-align: middle;
+
+            background: url('../images/custom_checkbox.png') no-repeat 0 -15px;
+
+        }
+        input[type="checkbox"]:disabled + label {
+            opacity: .5;
+            cursor: default;
+        }
+        input[type="checkbox"]:not(:checked):not(:disabled):hover + label:before {
+            background-position: 0 -30px;
+        }
+        input[type="checkbox"]:checked + label:before {
+            background-position: 0 0;
+        }
+        input[type="checkbox"]:focus + label {
+
+        }
+    </pre>
+
+    <p>Exactly this CSS stylesheet I use on this page, so you can see demo:</p>
+
+    <div class="test">You can test in different styles: <span class="" id="green">Green Square</span> <span class="" id="grey">Grey tick</span></div>
+	<div class="checkbox-style_1" id="test-zone">
+		<div>
+			<input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+			<input id="checkbox2" type="checkbox" disabled><label for="checkbox2">Checkbox 2</label>
+			<input id="checkbox3" type="checkbox" checked><label for="checkbox3">Checkbox 3</label>
+		</div>
+		<div>
+			<input id="checkbox4" type="checkbox" checked disabled><label for="checkbox4">Checkbox 4</label>
+			<input id="checkbox5" type="checkbox"><label for="checkbox5">Checkbox 5</label>
+			<input id="checkbox6" type="checkbox"><label for="checkbox6">Checkbox 6</label> 
+		</div>
+        <div>
+            <input id="checkbox7" type="checkbox" checked checked disabled><label for="checkbox7">Checkbox 7</label>
+            <input id="checkbox8" type="checkbox"><label for="checkbox8">Checkbox 8</label>
+            <input id="checkbox9" type="checkbox"><label for="checkbox9">Checkbox 9</label>
+        </div>
+	</div>
+
+    <p>Looks great, isn't it? But let me show a dark side of this method.</p>
+
+	<div class="checkbox-style_2">
+		<label><input type="checkbox">Checkbox 3</label>
+	</div>
+
+</div>
+<script type="text/javascript">
+     SyntaxHighlighter.all();
+</script>
+</body>
+</html>

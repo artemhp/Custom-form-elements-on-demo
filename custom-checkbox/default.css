@@ -1,0 +1,46 @@
+input[type="checkbox"] + label:before {
+    vertical-align: middle;
+}
+input[type="checkbox"] {
+    opacity: 0;
+    position:absolute;
+}
+
+label input[type="checkbox"] {
+    opacity:1;
+    position: relative;
+}
+
+
+input[type="checkbox"] + label {
+    text-indent:-2px;
+    padding-left:20px;
+}
+
+input[type="checkbox"] + label::before {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+
+    margin: 0 8px 4px 0;
+
+    line-height: 19px;
+    content: "";
+    vertical-align: middle;
+
+    background: url('../images/custom_checkbox.png') no-repeat 0 -15px;
+
+}
+input[type="checkbox"]:disabled + label {
+    opacity: .5;
+    cursor: default;
+}
+input[type="checkbox"]:not(:checked):not(:disabled):hover + label:before {
+    background-position: 0 -30px;
+}
+input[type="checkbox"]:checked + label:before {
+    background-position: 0 0;
+}
+input[type="checkbox"]:focus + label {
+
+}
