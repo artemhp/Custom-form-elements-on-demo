@@ -16,13 +16,16 @@ body {
 	background-image: url(data:image/gif;base64,R0lGODlhZABkAIAAAMPWvJamkCH5BAAAAAAALAAAAABkAGQAAAL/hI+py30Bo5y02kud3tzgD4ZTR5aPiKajyW7qm7ZyA9fgjCf2buU+wAtKfjmhkYgzCpEzZZApc/KgLemOyrLasCZtjVvywsAk8YvcMavQHHWMrXGj4HF5iO6w3/EM/Y2/4PcBGCh4QahgeIiIoNjDeOK4AgkkOQlpecmYOURZyRng+ckpCgpRaooKqkrqaRrqmhq7OttK+cqamWu5K9nr+KsYbDgsWOwnOsp7bJcsW7sM7css50wrDUztZm17e+3djfktHr45bl6O+Ayuq63G3Y4t7G4GH81+Tx6PPy1PTC/GXj9+2fwZA+hFYEGC8wwiQ6hFYUOG/xzqkViR4kGLGc0gWsG4UeNDjtU8SgE5UuRFk05QriQppwAAOw==);	
 }
 .wrapper {
-	padding:20px;
-	width:1000px;
+    padding: 20px 30px 20px 20px;
+    width:900px;
 	margin:0 auto;
     background-image: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAbSURBVHjaYvz///8ZBgYGBiYGKAAAAAD//wMAOy4Dzd8KaSAAAAAASUVORK5CYII=);
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+}
+a {
+    color:#3466c3;
 }
 .checkbox-style_1 {
 	padding-left:60px;
@@ -158,4 +161,10 @@ input[type="checkbox"]:not(:checked):not(:disabled):hover + label.grey::before {
     }
     .checkbox-style_2 span.custom-tick {
         display: none;
+    }
+
+
+.checkbox-style_2 label input[type="checkbox"] {
+    opacity:1;
+    position:relative;
     }

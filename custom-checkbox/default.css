@@ -7,11 +7,6 @@ input[type="checkbox"] {
     position:absolute;
 }
 
-.checkbox-style_2 label input[type="checkbox"] {
-    opacity:1;
-    position: relative;
-}
-
 input[type="checkbox"] + label,
 input[type="checkbox"] + .custom-checkbox-label{
 
@@ -29,7 +24,7 @@ input[type="checkbox"] + .custom-tick::before {
     content: "";
     vertical-align: middle;
 
-    background: url('../images/custom_checkbox.png') no-repeat 0 -15px;
+    background: url('../article/images/custom_checkbox.png') no-repeat 0 -15px;
     }
 input[type="checkbox"] + .custom-tick::before {
     margin-right:4px;

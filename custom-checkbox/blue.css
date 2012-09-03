@@ -2,7 +2,7 @@ input[type="checkbox"] + label::before {
     width: 21px;
     height: 20px;
 
-    background: url('../images/custom_checkbox-blue.png') no-repeat 0 -20px;
+    background: url('../article/images/custom_checkbox-blue.png') no-repeat 0 -20px;
 }
 
 input[type="checkbox"]:not(:checked):not(:disabled):hover + label:before {

@@ -2,12 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9968d13f-116d-4d1f-a39e-e83b501eba05" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/checkbox.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.css" afterPath="$PROJECT_DIR$/css/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom-checkbox/blue.css" afterPath="$PROJECT_DIR$/custom-checkbox/blue.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom-checkbox/default.css" afterPath="$PROJECT_DIR$/custom-checkbox/default.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom-checkbox/green.css" afterPath="$PROJECT_DIR$/custom-checkbox/green.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom-checkbox/grey.css" afterPath="$PROJECT_DIR$/custom-checkbox/grey.css" />
+      <change type="MOVED" beforePath="D:\work\myscripts\custom-checkbox\css\index.css" afterPath="$PROJECT_DIR$/article/css/index.css" />
+      <change type="MOVED" beforePath="D:\work\myscripts\custom-checkbox\css\shCore.css" afterPath="$PROJECT_DIR$/article/css/shCore.css" />
+      <change type="MOVED" beforePath="D:\work\myscripts\custom-checkbox\css\shCoreDefault.css" afterPath="$PROJECT_DIR$/article/css/shCoreDefault.css" />
+      <change type="MOVED" beforePath="D:\work\myscripts\custom-checkbox\custom-checkbox.js" afterPath="$PROJECT_DIR$/js/custom-checkbox.js" />
+      <change type="MOVED" beforePath="D:\work\myscripts\custom-checkbox\font\marmelad-regular.eot" afterPath="$PROJECT_DIR$/article/font/marmelad-regular.eot" />
+      <change type="MOVED" beforePath="D:\work\myscripts\custom-checkbox\font\marmelad-regular.svg" afterPath="$PROJECT_DIR$/article/font/marmelad-regular.svg" />
+      <change type="MOVED" beforePath="D:\work\myscripts\custom-checkbox\font\marmelad-regular.ttf" afterPath="$PROJECT_DIR$/article/font/marmelad-regular.ttf" />
+      <change type="MOVED" beforePath="D:\work\myscripts\custom-checkbox\font\marmelad-regular.woff" afterPath="$PROJECT_DIR$/article/font/marmelad-regular.woff" />
+      <change type="MOVED" beforePath="D:\work\myscripts\custom-checkbox\images\bg.gif" afterPath="$PROJECT_DIR$/article/images/bg.gif" />
+      <change type="MOVED" beforePath="D:\work\myscripts\custom-checkbox\images\custom_checkbox-green.png" afterPath="$PROJECT_DIR$/article/images/custom_checkbox-green.png" />
+      <change type="MOVED" beforePath="D:\work\myscripts\custom-checkbox\images\custom_checkbox-grey.png" afterPath="$PROJECT_DIR$/article/images/custom_checkbox-grey.png" />
+      <change type="MOVED" beforePath="D:\work\myscripts\custom-checkbox\images\custom_checkbox.png" afterPath="$PROJECT_DIR$/article/images/custom_checkbox.png" />
+      <change type="MOVED" beforePath="D:\work\myscripts\custom-checkbox\images\wrapperbg.png" afterPath="$PROJECT_DIR$/article/images/wrapperbg.png" />
+      <change type="MOVED" beforePath="D:\work\myscripts\custom-checkbox\index.html" afterPath="$PROJECT_DIR$/article/index.html" />
+      <change type="MOVED" beforePath="D:\work\myscripts\custom-checkbox\js\checkbox.js" afterPath="$PROJECT_DIR$/article/js/checkbox.js" />
+      <change type="MOVED" beforePath="D:\work\myscripts\custom-checkbox\js\main.js" afterPath="$PROJECT_DIR$/article/js/main.js" />
+      <change type="MOVED" beforePath="D:\work\myscripts\custom-checkbox\js\prototype.js" afterPath="$PROJECT_DIR$/article/js/prototype.js" />
+      <change type="MOVED" beforePath="D:\work\myscripts\custom-checkbox\js\shAutoloader.js" afterPath="$PROJECT_DIR$/article/js/shAutoloader.js" />
+      <change type="MOVED" beforePath="D:\work\myscripts\custom-checkbox\js\shBrushCss.js" afterPath="$PROJECT_DIR$/article/js/shBrushCss.js" />
+      <change type="MOVED" beforePath="D:\work\myscripts\custom-checkbox\js\shBrushJScript.js" afterPath="$PROJECT_DIR$/article/js/shBrushJScript.js" />
+      <change type="MOVED" beforePath="D:\work\myscripts\custom-checkbox\js\shBrushPhp.js" afterPath="$PROJECT_DIR$/article/js/shBrushPhp.js" />
+      <change type="MOVED" beforePath="D:\work\myscripts\custom-checkbox\js\shBrushSql.js" afterPath="$PROJECT_DIR$/article/js/shBrushSql.js" />
+      <change type="MOVED" beforePath="D:\work\myscripts\custom-checkbox\js\shBrushXml.js" afterPath="$PROJECT_DIR$/article/js/shBrushXml.js" />
+      <change type="MOVED" beforePath="D:\work\myscripts\custom-checkbox\js\shCore.js" afterPath="$PROJECT_DIR$/article/js/shCore.js" />
     </list>
     <ignored path="custom-checkbox.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,36 +53,27 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
+        <entry file="file://$PROJECT_DIR$/article/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="244" column="126" selection-start="9012" selection-end="9012" vertical-scroll-proportion="0.7220126">
+            <state line="14" column="66" selection-start="561" selection-end="561" vertical-scroll-proportion="0.2816568">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/main.js">
+        <entry file="file://$PROJECT_DIR$/article/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="4" selection-start="567" selection-end="838" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="checkbox.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/checkbox.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="65" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.0">
+            <state line="21" column="0" selection-start="851" selection-end="851" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/index.css">
+        <entry file="file://$PROJECT_DIR$/article/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="25" selection-start="1506" selection-end="1506" vertical-scroll-proportion="0.0">
+            <state line="41" column="70" selection-start="1590" selection-end="1590" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -68,7 +82,7 @@
       <file leaf-file-name="default.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/custom-checkbox/default.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="55" selection-start="0" selection-end="1255" vertical-scroll-proportion="0.0">
+            <state line="22" column="40" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -86,7 +100,7 @@
       <file leaf-file-name="grey.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/custom-checkbox/grey.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="51" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
+            <state line="9" column="1" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -109,10 +123,13 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/custom-checkbox/green.css" />
         <option value="$PROJECT_DIR$/custom-checkbox/grey.css" />
-        <option value="$PROJECT_DIR$/custom-checkbox/default.css" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/css/index.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/custom-checkbox/default.css" />
+        <option value="$PROJECT_DIR$/article/css/index.css" />
+        <option value="$PROJECT_DIR$/article/js/main.js" />
+        <option value="$PROJECT_DIR$/article/index.html" />
       </list>
     </option>
   </component>
@@ -187,7 +204,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="custom-checkbox" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -201,7 +218,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="article" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="custom-checkbox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="custom-checkbox" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="article" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -220,6 +255,7 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\work\myscripts\custom-checkbox\js" />
+      <recent name="D:\work\myscripts\custom-checkbox\article" />
     </key>
   </component>
   <component name="RunManager">
@@ -331,7 +367,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/custom-checkbox/grey.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="51" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0" />
+        <state line="9" column="1" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/custom-checkbox/green.css">
@@ -339,37 +377,37 @@
         <state line="0" column="22" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/checkbox.js">
+    <entry file="file://$PROJECT_DIR$/article/js/checkbox.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="65" selection-start="1064" selection-end="1064" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="4" selection-start="567" selection-end="838" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="25" selection-start="1506" selection-end="1506" vertical-scroll-proportion="0.0">
+        <state line="22" column="38" selection-start="767" selection-end="767" vertical-scroll-proportion="0.4293915">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/custom-checkbox/default.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="55" selection-start="0" selection-end="1255" vertical-scroll-proportion="0.0">
+        <state line="22" column="40" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/article/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="244" column="126" selection-start="9012" selection-end="9012" vertical-scroll-proportion="0.7220126">
+        <state line="41" column="70" selection-start="1590" selection-end="1590" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="851" selection-end="851" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="66" selection-start="561" selection-end="561" vertical-scroll-proportion="0.2816568">
           <folding />
         </state>
       </provider>

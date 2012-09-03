@@ -12,7 +12,7 @@ document.observe("dom:loaded", function() {
         });
     });
 
-    $$("input[type=checkbox]").each(function(el){
+    $$("#test-zone3 input[type=checkbox]").each(function(el){
         if (el.up("label")) {
             el.up("label").addClassName("custom-checkbox-label").down("input[type=checkbox]").insert({
                 after: "<span class='custom-tick'></span>"
@@ -20,3 +20,11 @@ document.observe("dom:loaded", function() {
         }
     });
 });
+
+
+/*
+$(document).ready(function() {
+    var custom_checkbox_label = $("#test-zone3 input[type=checkbox]").parent("label");
+    custom_checkbox_label.addClass("custom-checkbox-label");
+    $("<span class='custom-tick'></span>").insertAfter(custom_checkbox_label.children("input[type=checkbox]"));
+});*/

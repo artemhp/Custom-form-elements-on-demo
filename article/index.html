@@ -13,11 +13,12 @@
 	<link href="css/shCoreDefault.css" rel="stylesheet" type="text/css" />
 
     <script type="text/javascript" src="js/prototype.js"></script>
+    <!--<script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>-->
     <script type="text/javascript" src="js/main.js"></script>
 
     <!-- Custom Checkbox Styles -->
-    <link href="custom-checkbox/default.css" type="text/css" rel="stylesheet" />
-    <link href="custom-checkbox/green.css" type="text/css" rel="stylesheet" />
+    <link href="../custom-checkbox/default.css" type="text/css" rel="stylesheet" />
+    <link href="../custom-checkbox/green.css" type="text/css" rel="stylesheet" />
 
 </head>
 
@@ -144,24 +145,22 @@
     <h3>Prototype Framework</h3>
 
     <pre class="brush: js; gutter: true; toolbar:false">
-		$$("input[type=checkbox]").each(function(el){
-            if (el.up("label")) {
-                el.up("label").addClassName("custom-checkbox-label").down("input[type=checkbox]").insert({
-                    after: "<span class='custom-tick'></span>"
-                });
-            }
-        });</pre>
+    $$("input[type=checkbox]").each(function(el){
+        if (el.up("label")) {
+            el.up("label").addClassName("custom-checkbox-label").down("input[type=checkbox]").insert({
+                after: "<span class='custom-tick'></span>"
+            });
+        }
+    });</pre>
 
     <h3>jQuery</h3>
 
     <pre class="brush: js; gutter: true; toolbar:false">
-		$$("input[type=checkbox]").each(function(el){
-            if (el.up("label")) {
-                el.up("label").addClassName("custom-checkbox-label").down("input[type=checkbox]").insert({
-                    after: "<span class='custom-tick'></span>"
-                });
-            }
-        });</pre>
+	$(document).ready(function() {
+        var custom_checkbox_label = $("#test-zone3 input[type=checkbox]").parent("label");
+        custom_checkbox_label.addClass("custom-checkbox-label");
+        $("<span class='custom-tick'></span>").insertAfter(custom_checkbox_label.children("input[type=checkbox]"));
+    });</pre>
 
     <p>Use only one script on jquery or prototype.</p>
 
@@ -242,7 +241,12 @@
         </div>
     </div>
 
-    <p>The best standard is the first case, so if you don't use wrapped construction you don't need use this script on js.</p>
+    <p>The best standard is the first case, so if you don't use wrapped construction you don't need use this script on javascript.</p>
+
+    <p>If you have a situation when you need to show custom checkboxes without labels,
+        or with CSS2 only for older browsers <br /> then better to use solution with javascript -
+    <a href="#">Crossborwser Custom Checkboxes on JavaScript</a>
+    </p>
 
 </div>
 <script type="text/javascript">
