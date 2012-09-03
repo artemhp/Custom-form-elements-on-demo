@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Test Custom checkbox</title>
+	<title>Custom Checkbox on CSS3 without JavaScript</title>
 	
 	<link href="css/index.css" type="text/css" rel="stylesheet" />
 	
@@ -34,7 +34,7 @@
 
 	<h2>Style checkbox in form with CSS3</h2>
 
-	<p>CSS stylesheet presented in this article is intended for layout like this:</p>
+	<p>Solution for creating custom checkbox without javascript for this construction of HTML layout:</p>
 
 	<pre class="brush: js; gutter: false; toolbar:false">
 		<input id="check1" type="checkbox"><label for="check1">Checkbox 1</label>
@@ -106,17 +106,143 @@
 			<input id="checkbox6" type="checkbox"><label for="checkbox6">Checkbox 6</label> 
 		</div>
         <div>
-            <input id="checkbox7" type="checkbox" checked checked disabled><label for="checkbox7">Checkbox 7</label>
+            <input id="checkbox7" type="checkbox" checked disabled><label for="checkbox7">Checkbox 7</label>
             <input id="checkbox8" type="checkbox"><label for="checkbox8">Checkbox 8</label>
             <input id="checkbox9" type="checkbox"><label for="checkbox9">Checkbox 9</label>
         </div>
 	</div>
 
     <p>Looks great, isn't it? But let me show a dark side of this method.</p>
+    <p>As you know exist another rule of writing construction with label and input: when label wrap input, like this:</p>
 
-	<div class="checkbox-style_2">
-		<label><input type="checkbox">Checkbox 3</label>
-	</div>
+    <pre class="brush: js; gutter: false; toolbar:false">
+		<label for="check2"><input id="check2" type="checkbox"> Checkbox 1</label>
+	</pre>
+
+    <p>In this case our method described upper will not be useful, but even css style is applied to this page inputs will be shown correctly but with no custom styles.</p>
+
+    <div class="checkbox-style_2" id="test-zone2">
+        <div>
+            <label><input type="checkbox">Checkbox 1</label>
+            <label><input type="checkbox" disabled>Checkbox 2</label>
+            <label><input type="checkbox" checked>Checkbox 3</label>
+        </div>
+        <div>
+            <label><input type="checkbox" checked disabled>Checkbox 4</label>
+            <label><input type="checkbox">Checkbox 5</label>
+            <label><input type="checkbox">Checkbox 6</label>
+        </div>
+        <div>
+            <label><input type="checkbox" checked disabled>Checkbox 7</label>
+            <label><input type="checkbox">Checkbox 8</label>
+            <label><input type="checkbox">Checkbox 9</label>
+        </div>
+    </div>
+
+    <p>Custom styles for this method we can apply just using some rows jquery or prototype script and modify css stylesheet</p>
+
+    <h3>Prototype Framework</h3>
+
+    <pre class="brush: js; gutter: true; toolbar:false">
+		$$("input[type=checkbox]").each(function(el){
+            if (el.up("label")) {
+                el.up("label").addClassName("custom-checkbox-label").down("input[type=checkbox]").insert({
+                    after: "<span class='custom-tick'></span>"
+                });
+            }
+        });</pre>
+
+    <h3>jQuery</h3>
+
+    <pre class="brush: js; gutter: true; toolbar:false">
+		$$("input[type=checkbox]").each(function(el){
+            if (el.up("label")) {
+                el.up("label").addClassName("custom-checkbox-label").down("input[type=checkbox]").insert({
+                    after: "<span class='custom-tick'></span>"
+                });
+            }
+        });</pre>
+
+    <p>Use only one script on jquery or prototype.</p>
+
+    <h3>CSS</h3>
+
+     <pre class="brush: css; gutter: true; toolbar:false">
+        input[type="checkbox"] + label:before,
+        input[type="checkbox"] + .custom-tick:before {
+            vertical-align: middle;
+        }
+        input[type="checkbox"] {
+            opacity: 0;
+            position:absolute;
+        }
+
+        .checkbox-style_2 label input[type="checkbox"] {
+            opacity:1;
+            position: relative;
+        }
+
+        input[type="checkbox"] + label,
+        input[type="checkbox"] + .custom-checkbox-label{
+
+            }
+
+        input[type="checkbox"] + label::before,
+        input[type="checkbox"] + .custom-tick::before {
+            display: inline-block;
+            width: 16px;
+            height: 15px;
+
+            margin: 0 8px 4px 0;
+
+            line-height: 19px;
+            content: "";
+            vertical-align: middle;
+
+            background: url('../images/custom_checkbox.png') no-repeat 0 -15px;
+            }
+        input[type="checkbox"] + .custom-tick::before {
+            margin-right:4px;
+        }
+
+        input[type="checkbox"]:disabled + label,
+        input[type="checkbox"]:disabled + .custom-tick{
+            opacity: .5;
+            cursor: default;
+        }
+        input[type="checkbox"]:not(:checked):not(:disabled):hover + label:before,
+        input[type="checkbox"]:not(:checked):not(:disabled):hover + .custom-tick:before {
+            background-position: 0 -30px;
+        }
+        input[type="checkbox"]:checked + label:before,
+        input[type="checkbox"]:checked + .custom-tick:before {
+            background-position: 0 0;
+        }
+        input[type="checkbox"]:focus + label {
+        }
+     </pre>
+
+    <p>And we got result with "label wrapped" construction:</p>
+
+    <div class="checkbox-style_3" id="test-zone3">
+        <div>
+            <label><input type="checkbox">Checkbox 1</label>
+            <label><input type="checkbox" disabled>Checkbox 2</label>
+            <label><input type="checkbox" checked>Checkbox 3</label>
+        </div>
+        <div>
+            <label><input type="checkbox" checked disabled>Checkbox 4</label>
+            <label><input type="checkbox">Checkbox 5</label>
+            <label><input type="checkbox">Checkbox 6</label>
+        </div>
+        <div>
+            <label><input type="checkbox" checked disabled>Checkbox 7</label>
+            <label><input type="checkbox">Checkbox 8</label>
+            <label><input type="checkbox">Checkbox 9</label>
+        </div>
+    </div>
+
+    <p>The best standard is the first case, so if you don't use wrapped construction you don't need use this script on js.</p>
 
 </div>
 <script type="text/javascript">

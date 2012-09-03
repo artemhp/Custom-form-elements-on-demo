@@ -1,4 +1,5 @@
-input[type="checkbox"] + label:before {
+input[type="checkbox"] + label:before,
+input[type="checkbox"] + .custom-tick:before {
     vertical-align: middle;
 }
 input[type="checkbox"] {
@@ -6,18 +7,18 @@ input[type="checkbox"] {
     position:absolute;
 }
 
-label input[type="checkbox"] {
+.checkbox-style_2 label input[type="checkbox"] {
     opacity:1;
     position: relative;
 }
 
+input[type="checkbox"] + label,
+input[type="checkbox"] + .custom-checkbox-label{
 
-input[type="checkbox"] + label {
-    text-indent:-2px;
-    padding-left:20px;
-}
+    }
 
-input[type="checkbox"] + label::before {
+input[type="checkbox"] + label::before,
+input[type="checkbox"] + .custom-tick::before {
     display: inline-block;
     width: 16px;
     height: 15px;
@@ -29,18 +30,23 @@ input[type="checkbox"] + label::before {
     vertical-align: middle;
 
     background: url('../images/custom_checkbox.png') no-repeat 0 -15px;
-
+    }
+input[type="checkbox"] + .custom-tick::before {
+    margin-right:4px;
 }
-input[type="checkbox"]:disabled + label {
+
+input[type="checkbox"]:disabled + label,
+input[type="checkbox"]:disabled + .custom-tick{
     opacity: .5;
     cursor: default;
 }
-input[type="checkbox"]:not(:checked):not(:disabled):hover + label:before {
+input[type="checkbox"]:not(:checked):not(:disabled):hover + label:before,
+input[type="checkbox"]:not(:checked):not(:disabled):hover + .custom-tick:before {
     background-position: 0 -30px;
 }
-input[type="checkbox"]:checked + label:before {
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:checked + .custom-tick:before {
     background-position: 0 0;
 }
 input[type="checkbox"]:focus + label {
-
 }
